@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Crud Javascript</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <form autocomplete="off" onsubmit="onEnviar()">
+            <div>
+              <label for="productCode">Produto code</label>
+              <input type="text" name="productCode" id="productCode" />
+            </div>
+            <div>
+              <label for="product">Produto Nome</label>
+              <input type="text" name="product" id="product"/>
+            </div>
+            <div>
+              <label for="quantidade">Quantidade</label>
+              <input type="number" name="quantidade" id="quantidade"/>
+            </div>
+            <div>
+                <label for="preco">Preço</label>
+                <input type="number" name="preco" id="preco">
+            </div>  
+            <div class="form_action--button">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Resert"> 
+            </div>
+          </form>
+          <td>
+              <table class="list" id="storeList" >
+                  <tread>
+                      <tr>  
+                          <th>Product Code</th>
+                          <th>Product Nome</th>
+                          <th>Quantidade</th>
+                          <th>Preço</th>
+                      </tr>
+                  </tread>
+                  <tbody >   
+
+                  </tbody>
+              </table>
+          </td>
+        </td>
+      </tr>
+    </table>
+    <script type="text/javascript" src="./scripts.js"></script>
+  </body>
+</html>
